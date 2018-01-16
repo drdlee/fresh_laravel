@@ -20,3 +20,12 @@ Route::get('/user/{id}/{name}', function ($id, $name){
 Route::get('/', 'PagesController@Index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
+
+Route::resource('posts', 'PostsController');
+/*
+^^^ Jadi ini akan punya alamat untuk ke "posts" contoh: "www.kaskus.com/posts/create",
+dan likned to PostsController, dimana dalam PostsController terdapat function untuk :
+- ambil data
+- hapus data
+- update data
+*/
