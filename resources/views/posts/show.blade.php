@@ -2,7 +2,7 @@
 @section('content')
   <a href="/posts" class="btn btn-default">go back</a>
   <h2>{{$post->title}}</h2>
-  <small>Written on {{$post->created_at}}</small>
+  <small>Written on {{$post->created_at}} by. {{$post->user->name}}</small>
   <p>{!!$post->body!!}</p>
   <hr>
   <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
