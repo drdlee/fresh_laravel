@@ -29,3 +29,7 @@ dan likned to PostsController, dimana dalam PostsController terdapat function un
 - hapus data
 - update data
 */
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
